@@ -15,11 +15,22 @@
       "headers": { "Cache-Control": "public, max-age=31536000, immutable" }
     },
     {
+      "src": "/api/(.*)",
+      "dest": "https://agritrack-backend-r3l6.onrender.com/api/$1"
+    },
+    {
+      "src": "/uploads/(.*)",
+      "dest": "https://agritrack-backend-r3l6.onrender.com/uploads/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
   ],
   "env": {
-    "REACT_APP_API_URL": "https://agritack-backend.vercel.app"
+    "REACT_APP_BACKEND_URL": "https://agritrack-backend-r3l6.onrender.com",
+    "REACT_APP_API_URL": "https://agritrack-backend-r3l6.onrender.com/api/v1",
+    "REACT_APP_SUPABASE_URL": "https://ecvhzfyrwstnkwwnknwp.supabase.co",
+    "REACT_APP_SUPABASE_ANON_KEY": "sb_publishable_c-iQ-Ta3m2Q2o8WyrZ7CQQ_E0O5uWYn"
   }
 }
