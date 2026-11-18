@@ -102,7 +102,7 @@ const GoogleTranslate = ({ landingPage = false }) => {
       <div
         className={`absolute ${landingPage ? 'top-[calc(100%+0.5rem)]' : 'bottom-[calc(100%+0.5rem)]'} left-0 w-56 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden transition-all duration-300 z-[200] ${landingPage ? 'origin-top-left' : 'origin-bottom-left'} ${isVisible
           ? "opacity-100 translate-y-0 scale-100"
-          : "opacity-0 ${landingPage ? 'translate-y-2' : 'translate-y-2'} scale-95 pointer-events-none"
+          : "opacity-0 translate-y-2 scale-95 pointer-events-none"
           }`}
       >
         <div className="p-3 bg-slate-50 border-b border-slate-100">

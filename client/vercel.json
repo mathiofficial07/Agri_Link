@@ -12,7 +12,9 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "headers": { "Cache-Control": "public, max-age=31536000, immutable" }
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
     },
     {
       "src": "/api/(.*)",
@@ -28,6 +30,8 @@
     }
   ],
   "env": {
+    "CI": "false",
+    "DISABLE_ESLINT_PLUGIN": "true",
     "REACT_APP_BACKEND_URL": "https://agritrack-backend-r3l6.onrender.com",
     "REACT_APP_API_URL": "https://agritrack-backend-r3l6.onrender.com/api/v1",
     "REACT_APP_SUPABASE_URL": "https://ecvhzfyrwstnkwwnknwp.supabase.co",

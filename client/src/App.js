@@ -1,6 +1,5 @@
 import React, { Suspense, lazy, Component } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import { FarmerLayout } from './components/farmer/FarmerLayout';
 

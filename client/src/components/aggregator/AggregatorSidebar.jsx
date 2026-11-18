@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { LayoutDashboard, ShoppingCart, Store, ClipboardList, User, LogOut, Menu, X, Sparkles, BarChart3, Radio, Gavel } from "lucide-react";
+import React, { useState } from "react";
+import { LayoutDashboard, Store, ClipboardList, User, LogOut, Menu, X, Sparkles, BarChart3, Radio, Gavel } from "lucide-react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import GoogleTranslate from "../GoogleTranslate";
